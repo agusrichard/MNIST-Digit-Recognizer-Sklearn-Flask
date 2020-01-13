@@ -1,0 +1,5 @@
+__pycache__
+venv
+finalized_model.sav
+mnist_train.csv
+mnist_test.csv
