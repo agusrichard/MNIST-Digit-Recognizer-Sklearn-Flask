@@ -17,9 +17,9 @@ window.onload = function(){
 };
 
 //reset canvas
-function reset() {           
+function reset() { 
+    $('#guess').text('What is the number?');         
     canvas.clear();   
-    $('#guess').text('');     
 }
 
 function handleImage(){                        

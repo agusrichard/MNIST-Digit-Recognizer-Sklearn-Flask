@@ -1,10 +1,10 @@
 from flask import Flask, render_template, url_for, request, jsonify
 import pickle
-from utilities import convert_image, make_prediction
+from .utilities import convert_image, make_prediction
 
 app = Flask(__name__)
 
-loaded_model = pickle.load(open('model/finalized_model.sav', 'rb'))
+loaded_model = pickle.load(open('app/model/finalized_model.sav', 'rb'))
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
